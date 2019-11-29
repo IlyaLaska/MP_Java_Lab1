@@ -50,8 +50,10 @@ public class Arr
         return res;
     }
     public IntStream nonDistinct() {
-        IntStream stream = Arrays.stream(array);
-        IntStream distinct = stream.distinct();
+        IntStream stream1 = Arrays.stream(array);
+        IntStream stream2 = Arrays.stream(array);
+        IntStream distinct = stream1.distinct();
+
         return distinct;
     }
 }
