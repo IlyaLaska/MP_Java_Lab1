@@ -11,16 +11,16 @@ public class Main {
         Arr a = new Arr(new int[]{1, 2, 3, 4, 1, 2});
 //        int[] b = {1, 2, 3, 4, 5};
 //        System.out.println(Arrays.toString(a.getArray()));
-        System.out.println("Task 1");
+        System.out.println("Task: 2 - Найти среднее значение элементов");
         System.out.println(a.avg());
-        System.out.println("Task 2");
+        System.out.println("Task: 5 - Посчитать количество элементов больше нуля");
         System.out.println(a.count());
-        System.out.println("Task 3");
+        System.out.println("Task: 6 - Помножить элементы  на число");
         int[] mulRes = a.mul(5);
         System.out.println(Arrays.toString(mulRes));
-        System.out.println("Task 4");
+        System.out.println("Task: 15 - Найти индексы вхождения элемента в массив (IntStream)");
         System.out.println(Arrays.toString(a.indices(1)));
-        System.out.println("Task 5");
+        System.out.println("Task: 17 - Вывести элементы, значения которых равны значениям других элементов.");
         System.out.println(Arrays.toString(a.t2()));
     }
 }

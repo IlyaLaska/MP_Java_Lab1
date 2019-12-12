@@ -42,16 +42,16 @@ public class Arr
         return stream.map(el -> el * num).toArray();
     }
     public int[] indices(int toMatch) {
-        IntStream stream1 = Arrays.stream(array);
-        int[] toArr = stream1.toArray();
+//        IntStream stream1 = Arrays.stream(array);
+//        int[] toArr = stream1.toArray();
         IntStream stream = Arrays.stream(array);
-        IntStream res = IntStream.range(0, (int) stream.count()).filter(pos -> toArr[pos] == toMatch);
+        IntStream res = IntStream.range(0, (int) stream.count()).filter(pos -> array[pos] == toMatch);
         return res.toArray();
     }
     public Object[] t2() {
         int[] arr2 = Arrays.stream(array).sorted().toArray();
         Vector<Integer> dupl = new Vector<Integer>(3, 3);
-        IntStream.range(1, (int) arr2.length).forEach(pos -> {
+        IntStream.range(1, (int) arr2.length).peek(pos -> {
             if(arr2[pos] == arr2[pos-1]) {
                 dupl.addElement(arr2[pos]);
             }
